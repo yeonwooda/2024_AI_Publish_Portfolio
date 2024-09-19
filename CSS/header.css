@@ -1,0 +1,56 @@
+.header {
+  width: 100vw;
+
+  padding: 25px 0;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  font-family: "Cafe24Meongi-B-v1.0";
+  background-color: white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  color: #0b438c;
+}
+
+.nav > h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.nav > ul {
+  display: flex;
+
+  color: #0b438c;
+  font-size: 23px;
+}
+
+ul > li > a {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s;
+}
+ul > li > a:hover {
+  background-color: #0b438c;
+  color: white;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
